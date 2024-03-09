@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      /* Reset default browser styles */
+      body, h1, h2, p, ul, li {
+        Margin: 0;
+        Padding: 0;
+      }
+
+      Body {
+        Font-family: Arial, sans-serif;
+        Line-height: 1.6;
+        background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(ele.jpg);
+        background-position: center;
+        background-size: cover;
+        position: relative;
+      }
+
+      .container {
+        Max-width: 1200px;
+        Margin: 0 auto;
+        Padding: 0 20px;
+      }
+
+      Header {
+        Background-color: red;
+        Color: #fff;
+        Padding: 20px 0;
+      }
+
+      .logo img {
+        Height: 70px;
+        Width: auto;
+      }
+
+      
+      nav{
+          display: flex;
+          padding: 2% 6%;
+          justify-content: space-between;
+          align-items: center;
+      }
+      nav{
+          flex: 1;
+          text-align: right;
+
+      }
+      nav ul li{
+          list-style: none;
+          display: inline-block;
+          padding: 8px 12px;
+          position: relative;
+      }
+      nav ul li a {
+          color: #fff;
+          text-decoration: none;
+          font-size: 14px;
+          font-family: Arial, Helvetica, sans-serif;
+      }
+      nav ul li::after{
+          content: '';
+          width: 0%;
+          height: 3px;
+          background: orange;
+          display: block;
+          margin: auto;
+          transition: 0.7s;
+      }
+      nav ul li:hover::after{
+          width: 100%;
+      }
+
+      .hero {
+        Background-image: url(‘hero-background.jpg’); /* Replace ‘hero-background.jpg’ with the path to your image */
+        Background-size: cover;
+        Background-position: center;
+        Color: #fff;
+        Text-align: center;
+        Padding: 100px 0;
+      }
+
+      .hero h1 {
+        Font-size: 36px;
+        Margin-bottom: 20px;
+      }
+
+      .hero p {
+        Font-size: 18px;
+        Margin-bottom: 30px;
+      }
+
+      .btn {
+        Display: inline-block;
+        Background-color: #007bff;
+        Color: #fff;
+        Padding: 10px 20px;
+        Text-decoration: none;
+        Border-radius: 5px;
+        Transition: background-color 0.3s ease;
+      }
+
+      .btn:hover {
+        Background-color: #0056b3;
+      }
+
+      .features {
+        Background-color: #f2f2f2;
+        Padding: 80px 0;
+      }
+
+      .features h2 {
+        Text-align: center;
+        Margin-bottom: 40px;
+      }
+
+      .features .feature {
+        Text-align: center;
+        Margin-bottom: 40px;
+      }
+
+      .about {
+        Padding: 80px 0;
+        color: #fff;
+      }
+
+      .about h2 {
+        Text-align: center;
+        Margin-bottom: 40px;
+      }
+
+      .programs {
+        Padding: 80px 0;
+        Text-align: center;
+        color: #fff;
+      }
+
+      .programs h2 {
+        Margin-bottom: 40px;
+      }
+
+      Footer {
+        Background-color: red;
+        Color: #fff;
+        Padding: 50px 0;
+      }
+
+      Footer .container {
+        Display: flex;
+        Justify-content: space-between;
+        Align-items: center;
+      }
+
+      .contact-info {
+        text-align: center;
+      }
+      .contact-info h3 {
+        color: #fff;
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+
+      .contact-info p {
+        font-size: 18px;
+        color: #fff;
+        Margin-bottom: 10px;
+      }
+      .contact-info a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
+      }
+      .contact-info a:hover {
+        text-decoration: underline;
+      }
+      .social-links {
+        text-align: center;
+      }
+      .social-links h3 {
+        color: #fff;
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+      .social-links ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      .social-links ul li {
+        display: inline;
+        margin-right: 10px;
+      }
+      .social-links ul li a {
+        color: #fff;
+        font-size: 24px;
+        text-decoration: none;
+
+      }
+      .social-links ul li a:hover {
+        color: #ccc;
+      }
+
+      
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+          <div class="logo">
+            <img src="popo.jpg" alt="Faculty Logo">
+          </div>
+          <nav>
+            <ul>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#programs">Programs</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="electime.html">Timetable</a></li>
+              <li><a href="department.html">Back to home</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      
+      <section class="hero">
+        <div class="container">
+          <h1>Welcome to the Electrical Engineering Department</h1>
+          <p>Empowering students the best electrical skills and technology</p>
+          <a href="#programs" class="btn">Explore Our Programs</a>
+        </div>
+      </section>
+      
+      <section class="features">
+        <div class="container">
+          <div class="feature">
+            <h2>Programs Offered</h2>
+            <p>Discover our wide range of undergraduate and graduate programs designed to prepare students for successful careers.</p>
+          </div>
+          <div class="feature">
+            <h2>Cutting-edge Facilities</h2>
+            <p>We have the state-of-the-art laboratories, workshops, and research centers equipped with the latest technology.</p>
+          </div>
+          <div class="feature">
+            <h2>Industry Partnerships</h2>
+            <p>Benefit from our strong industry partnerships providing students with real-world experience and career opportunities.</p>
+          </div>
+          <div class="feature">
+            <h2>Department Expertise</h2>
+            <p>Learn from our renowned departmental members who are experts in their fields and dedicated to student success.</p>
+          </div>
+        </div>
+      </section>
+    
+      <section class="about" id="about">
+        <div class="container">
+          <h2>About Us</h2>
+          <p>Founded in 2004, the Department of Electrical Engineering is committed to providing exceptional education and research opportunities in the fields of technology. Our departmental members are leaders in their fields, and our innovative programs prepare students for successful careers in industry sectors.</p>
+        </div>
+      </section>
+    
+      <section class="programs" id="programs">
+        <div class="container">
+          <h2>Programs</h2>
+          <p>Explore our diverse range of academic programs designed to meet the needs of students interested in Computer Science. Whether you’re interested in software engineering, Web development, or Hacking, we have a program for you. The programmes are as follows: </p>
+          <p>Btech Electrical Engineering</p>
+          <p>HND Electrical Engineering</p>
+          <p>Diploma in Electrical Engineering</p>
+        </div>
+      </section>
+    
+      
+    
+      <footer id="contact">
+        <div class="container">
+          <div class="contact-info">
+            <h3>Contact Us</h3>
+            <p><b><u>Electrical Engineering Department</u></b><br>
+              Address: Kumasi - Kumasi<br>
+              <i class="fa fa-phone"></i><a href="tel:+233559319983">+233559319983</a><br>
+              <i class="fa fa-envelope"></i><a href="email:ekowewusieyamoah@gmail.com">ekowewusieyamoah@gmail.com</a></p>
+          </div>
+          <div class="social-links">
+            <h3>Follow Us</h3>
+            <ul>
+              <li><a href="#"><i class="fa fa-facebook">Facebook</i></a></li>
+              <li><a href="#"><i class="fa fa-google-plus">Google</i></a></li>
+              <li><a href="#"><i class="fa fa-instagram">Instagram</i></a></li>
+              <li><a href="#"><i class="fa fa-twitter">twitter</i></a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    
+</body>
+</html>
