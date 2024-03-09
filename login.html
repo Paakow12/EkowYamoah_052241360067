@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'poppins', sans-serif;
+        }
+        body{
+            background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(kstu1.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        .form {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 90vh;
+
+        }
+        .box {
+            background-color: lightgreen;
+            display: flex;
+            flex-direction: column;
+            padding: 25px 25px;
+            border-radius: 20px;
+            backdrop-filter: blur;
+            width: 450px;
+            margin: 0px 10px;
+
+        }
+        .label h1{
+            font-size: 30px;
+            color: blue;
+            font-weight: 600;
+            padding-bottom: 20px;
+            border-bottom: 1px solid blue;
+            margin-bottom: 10px;
+        }
+        .field {
+            display: flex;
+            margin-bottom: 10px;
+            flex-direction: column;
+           
+        }
+        .link{
+            border-bottom: 1px solid blue;
+            padding-bottom: 20px;
+        }
+        .field input{
+            height: 40px;
+            width: 100%;
+            font-size: 16px;
+            padding: 0 10px;
+            border-radius: 10px;
+            border: 1px solid blue;
+            outline: none;
+        }
+        .btn {
+            height: 40px;
+            background-color: blue;
+            border: 5px solid blue;
+            color: white;
+            font-size: 30px;
+            cursor: pointer;
+            margin-top: 10px;
+            padding: 0px 10px;
+            transition: all 0.3s;
+        }
+        .btn:hover{
+            background-color: lightblue;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="form">
+        
+        <form action="ppekow.php" method="POST">
+          <div class="box">
+                <div class="label">
+                    <h1>Login Form</h1>
+                    <div class="field">
+                        <label for="username">Username: </label>
+                        <input type="text" name="username">
+                        <br>
+                        <br>
+                        <label for="password">Password: </label>
+                        <input type="password" name="password">
+                        <br>
+                        <br>
+                        <input type="submit" class="btn" value="Login" name="Login">
+                    </div>
+                </div>
+                <div class="link">
+                    Don't have an account? <a href="regis.html">Sign up</a>
+                    <a href="index.html">Go Back</a>
+                </div>
+          </div>
+        </form>
+    </div>
+    
+</body>
+</html>
