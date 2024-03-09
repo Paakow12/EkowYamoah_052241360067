@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(kstu1.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.logo img {
+    Height: 70px;
+    Width: auto;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: orange;
+    display: block;
+    margin: auto;
+    transition: 0.7s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.text-box{
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 60px;
+
+}
+
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: rgb(9, 147, 78);
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 2px;
+    padding: 13px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover{
+    border: 2px solid orange;
+    background: orange;
+    transition: 2s;
+}
+
+nav .fa{
+    display: none;
+}
+@media(max-width: 700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: orange;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+    }
+}
+.department{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+    color: orange;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.dep-col{
+    flex-basis: 31%;
+    background: #99caae;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    border: 2px;
+    transition: 0.5s;
+    
+}
+h3{
+    color: orange;
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.dep-col:hover{
+    box-shadow: 0 0 30px 0px rgba(0, 0, 0, 0.2);
+}
+.dep2-col{
+    flex-basis: 31%;
+    background: #99caae;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    border: 2px;
+    transition: 0.5s;
+    
+}
+body{
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(applied_science.jpg);
+    background-position: center;
+    background-size: cover;
+}
+@media(max-width: 700px){
+    .row{
+        flex-direction: column;
+    }
+}
+table, th, td{
+    border: 1px solid green;
+    border-collapse: collapse;
+}
+
+.container {
+    Max-width: 600px;
+    Margin: 50px auto;
+    Padding: 20px;
+    Background-color: #fff;
+    Border-radius: 10px;
+    Box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  H1 {
+    Text-align: center;
+    Margin-bottom: 20px;
+  }
+  
+  Form {
+    Display: grid;
+    Grid-gap: 10px;
+  }
+  
+  Label {
+    Font-weight: bold;
+  }
+  
+  Input[type="text"],
+  Input[type="number"],
+  Input[type="datetime-local"] {
+    Width: 97%;
+    Padding: 10px;
+    Border: 1px solid #ccc;
+    Border-radius: 5px;
+  }
+  
+  Button[type="submit"] {
+    Width: 99%;
+    Padding: 10px;
+    Background-color: orange;
+    Color: #fff;
+    Border: none;
+    Border-radius: 5px;
+    Cursor: pointer;
+  }
+
+  Button[id="print-button"] {
+    Width: 99%;
+    Padding: 10px;
+    Background-color: orange;
+    Color: #fff;
+    Border: none;
+    Border-radius: 5px;
+    Cursor: pointer;
+  }
+  
+  @media print {
+    Body * {
+      Visibility: hidden;
+    }
+    .container, .container * {
+      Visibility: visible;
+    }
+    .container {
+      Position: absolute;
+      Left: 0;
+      Top: 0;
+    }
+    @page {
+      Size: auto;
+      Margin: 20mm;
+    }
+  }
+
+  
+
+  

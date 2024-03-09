@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <style>
+       /* Reset styles */
+        *	{
+            Margin: 0;
+            Padding: 0;
+            Box-sizing: border-box;
+        }
+
+        /* Global styles */
+        body {
+            Font-family: Arial, sans-serif;
+            Line-height: 1.6;
+            Background-color: #f4f4f4;
+            background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(civil.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        header {
+            Background: rgb(164, 183, 20);
+            Color: #fff;
+            Padding: 20px 0;
+            Position: fixed;
+            Top: 0;
+            Width: 100%;
+            z-index: 1000;
+        }
+        .hero.container {
+            Max-width: 1200px;
+            margin-top: 100px;
+            Padding: 0 20px;
+        }
+        .hero.container p{
+            color: #ffc107;
+        }
+
+        /* Header styles */
+        
+
+        header .container {
+            Display: flex;
+            Justify-content: space-between;
+            Align-items: center;
+        }
+
+        Header .logo img {
+        Height: 40px;
+        }
+
+        Header nav ul {
+        List-style: none;
+        Display: flex;
+        }
+
+        Header nav ul li {
+        Margin-right: 20px;
+        }
+
+        Header nav ul li a {
+        Color: #fff;
+        Text-decoration: none;
+        Font-size: 16px;
+        Transition: color 0.3s ease;
+        }
+
+        Header nav ul li a:hover {
+        Color: #ffc107;
+        }
+
+        /* Hero section styles */
+        .hero {
+        Background: url(‘kow.jpeg’) no-repeat center center/cover;
+        Color: #fff;
+        Padding: 150px 0;
+        Text-align: center;
+        }
+
+        .hero h1 {
+        Font-size: 36px;
+        Margin-bottom: 20px;
+        }
+
+        .hero p {
+        Font-size: 18px;
+        Margin-bottom: 30px;
+        }
+
+        .hero .btn {
+        Background-color: #ffc107;
+        Color: #333;
+        Padding: 12px 24px;
+        Border: none;
+        Border-radius: 5px;
+        Font-size: 16px;
+        Text-decoration: none;
+        Transition: background-color 0.3s ease;
+        }
+
+        .hero .btn:hover {
+        Background-color: #ffca28;
+        }
+
+        /* Feature section styles */
+        .features {
+        Padding: 80px 0;
+        }
+
+        .features h2 {
+        Font-size: 32px;
+        Margin-bottom: 40px;
+        Text-align: center;
+        color: green;
+        }
+
+        .feature {
+        Text-align: center;
+        Margin-bottom: 40px;
+        }
+
+        .feature h2 {
+        Font-size: 24px;
+        Margin-bottom: 20px;
+        }
+
+        .feature p {
+        Font-size: 16px;
+        color: white;
+        }
+
+        /* About section styles */
+        .about {
+        Background-color: #ffc107;
+        Padding: 80px 0;
+        }
+
+        .about h2 {
+        Font-size: 32px;
+        Margin-bottom: 40px;
+        Text-align: center;
+        }
+
+        .about p {
+        Font-size: 16px;
+        Line-height: 1.8;
+        }
+
+        /* Programs section styles */
+        .programs {
+        Padding: 80px 0;
+        }
+
+        .programs h2 {
+        Font-size: 32px;
+        Margin-bottom: 40px;
+        Text-align: center;
+        color: green;
+        }
+
+        .programs p {
+        Font-size: 16px;
+        Line-height: 1.8;
+        color: white;
+        }
+
+        /* News section styles */
+        .news {
+        Background-color: #ffc107;
+        Padding: 80px 0;
+        }
+
+        .news h2 {
+        Font-size: 32px;
+        Margin-bottom: 40px;
+        Text-align: center;
+        }
+
+        .news .news-items {
+        Display: flex;
+        Justify-content: space-around;
+        }
+
+        .news-item {
+        Max-width: 400px;
+        Margin-bottom: 40px;
+        }
+
+        .news-item h3 {
+        Font-size: 24px;
+        Margin-bottom: 10px;
+        }
+
+        .news-item p {
+        Font-size: 16px;
+        Line-height: 1.8;
+        }
+
+        /* Footer styles */
+        Footer {
+            Background: rgb(164, 183, 20);
+        Color: #fff;
+        Padding: 40px 0;
+        Text-align: center;
+        }
+
+        Footer .container {
+        Display: flex;
+        Justify-content: space-between;
+        Align-items: center;
+        }
+
+        Footer .contact-info {
+        Text-align: left;
+        }
+
+        Footer .social-links {
+        Text-align: right;
+        }
+
+        Footer h3 {
+        Font-size: 24px;
+        Margin-bottom: 20px;
+        }
+
+        Footer p {
+        Font-size: 16px;
+        Line-height: 1.8;
+        align-items: center;
+        }
+
+        Footer ul {
+        List-style: none;
+        }
+
+        Footer ul li {
+        Display: inline;
+        Margin-right: 10px;
+        }
+
+        Footer ul li:last-child {
+        Margin-right: 0;
+        }
+
+        Footer ul li a {
+        Color: #fff;
+        Text-decoration: none;
+        Font-size: 18px;
+        Transition: color 0.3s ease;
+        }
+
+        Footer ul li a:hover {
+        Color: #ffc107;
+        }
+
+       
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+          <div class="logo">
+            <img src="logo.png" alt="Faculty Logo">
+          </div>
+          <nav>
+            <ul>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#programs">Programs</a></li>
+              <li><a href="#news">News</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      
+      <section class="hero">
+        <div class="container">
+          <h1>Welcome to the Computer Science Department</h1>
+          <p>Empowering students the best computing skills and technology</p>
+          <a href="#programs" class="btn">Explore Our Programs</a>
+        </div>
+      </section>
+      
+      <section class="features">
+        <div class="container">
+          <div class="feature">
+            <h2>Programs Offered</h2>
+            <p>Discover our wide range of undergraduate and graduate programs designed to prepare students for successful careers.</p>
+          </div>
+          <div class="feature">
+            <h2>Cutting-edge Facilities</h2>
+            <p>Explore our state-of-the-art laboratories, workshops, and research centers equipped with the latest technology.</p>
+          </div>
+          <div class="feature">
+            <h2>Industry Partnerships</h2>
+            <p>Benefit from our strong industry partnerships providing students with real-world experience and career opportunities.</p>
+          </div>
+          <div class="feature">
+            <h2>Faculty Expertise</h2>
+            <p>Learn from our renowned faculty members who are experts in their fields and dedicated to student success.</p>
+          </div>
+        </div>
+      </section>
+    
+      <section class="about" id="about">
+        <div class="container">
+          <h2>About Us</h2>
+          <p>Founded in [year], the Faculty of Applied Science and Technology is committed to providing exceptional education and research opportunities in the fields of [specific disciplines]. Our faculty members are leaders in their fields, and our innovative programs prepare students for successful careers in [industry sectors].</p>
+        </div>
+      </section>
+    
+      <section class="programs" id="programs">
+        <div class="container">
+          <h2>Programs</h2>
+          <p>Explore our diverse range of academic programs designed to meet the needs of students interested in Computer Science. Whether you’re interested in software engineering, Web development, or Hacking, we have a program for you. The programmes are as follows: </p>
+          <p>Btech Computer Technology</p>
+          <p>HND Computer Science</p>
+          <p>Btech Artificial Intelligence</p>
+        </div>
+      </section>
+    
+      <section class="news" id="news">
+        <div class="container">
+          <h2>News and Events</h2>
+          <div class="news-items">
+            <div class="news-item">
+              <h3>Recent News Article Title</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div class="news-item">
+              <h3>Upcoming Event Title</h3>
+              <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    
+      <footer id="contact">
+        <div class="container">
+          <div class="contact-info">
+            <h3>Contact Us</h3>
+            <p><b><u>Faculty of Applied Science and Technology</u></b><br>
+              Address: Dansoman - Accra<br>
+              <i class="fa fa-phone"></i><a href="tel:+233559319983">+233559319983</a><br>
+              <i class="fa fa-envelope"></i><a href="email:ekowewusieyamoah@gmail.com">ekowewusieyamoah@gmail.com</a></p>
+          </div>
+          <div class="social-links">
+            <h3>Follow Us</h3>
+            <ul>
+              <li><a href="#"> class="fa fa-facebook"</a></li>
+              <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+              <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter">twitter</i></a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+
+     
+    
+</body>
+</html>
